@@ -13,17 +13,36 @@
                     class="nav-link">
                     <i class="fas fa-fire"></i><span>Dashboard</span></a>
             </li>
+
+            {{-- user --}}
             <li>
                 <a href="{{route('users.index')}}"
                     class="nav-link">
                     <i class="fas fa-columns"></i> <span>Users</span></a>
             </li>
 
+            {{-- company --}}
              <li class="nav-item">
                 <a href="{{ route('companies.show', 1) }}" class="nav-link">
                     <i class="fas fa-columns"></i>
                     <span>Company</span>
                 </a>
-            </li> 
+            </li>
+
+            {{-- attendance --}}
+             <li class="nav-item">
+                <a href="{{ route('attendances.index') }}" class="nav-link">
+                    <i class="fas fa-columns"></i>
+                    <span>Attendances</span>
+                </a>
+            </li>
+
+            {{-- permission --}}
+             <li class="nav-item">
+                <a href="{{ route('permissions.index') }}" class="nav-link">
+                    <i class="fas fa-columns"></i>
+                    <span>Permission</span>
+                </a>
+            </li>
     </aside>
 </div>
